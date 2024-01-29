@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,200px);
+            gap: 20px;
+            grid-template-areas: 
+            "a a b"
+            "c d b"
+            
+        }
+        #container>div{
+            background-color: red;
+        }
+        #container>div:nth-child(1){
+            grid-area: a;
+        }
+        #container>div:nth-child(2){
+            grid-area: b;
+        }
+        #container>div:nth-child(3){
+            grid-area: c;
+        }
+        #container>div:nth-child(4){
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+     
+
+    </div>
+</body>
+</html>
+
+
+

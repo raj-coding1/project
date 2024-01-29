@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #container{
+        height: 1100px;
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        /* gap: 20px; */
+        row-gap: 10px;
+        column-gap: 25px;
+
+    }
+    #container>div{
+        background-color: blueviolet;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div style="background-color: #E07C24; border-radius: 10PX;">#E07C24</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
